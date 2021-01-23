@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://jason-carrillo.github.io/jason-carrillo.github.io",
+  "homepage" : "https://jason-carrillo.github.io/",
   "private": true,
   "name": "cara",
   "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
@@ -14,7 +14,9 @@
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^1.2.18",
